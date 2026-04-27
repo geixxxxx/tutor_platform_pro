@@ -51,3 +51,4 @@ http://localhost:4000
 
 - Ученик: `student@example.com` / `password`
 - Репетитор: `tutor@example.com` / `password`
+# intellikaschoolplatform
