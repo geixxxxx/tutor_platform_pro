@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "init-db": "psql $POSTGRES_URL -f schema.sql"
+    "init-db": "psql $DATABASE_URL -f schema.sql"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
