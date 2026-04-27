@@ -127,20 +127,20 @@ function performLogout() {
 function buildSidebar() {
   const nav = document.getElementById('sidebarNav');
   const studentItems = [
-    { id: 'dashboard', label: 'Дашборд', icon: '📊' },
-    { id: 'schedule', label: 'Расписание', icon: '📅' },
-    { id: 'homework', label: 'Домашние задания', icon: '✏️' },
-    { id: 'webinar', label: 'Вебинары', icon: '🎥' },
-    { id: 'shop', label: 'Магазин', icon: '🛒' },
-    { id: 'profile', label: 'Профиль', icon: '👤' },
+    { id: 'dashboard', label: 'Дашборд', icon: 'Д' },
+    { id: 'schedule', label: 'Расписание', icon: 'Р' },
+    { id: 'homework', label: 'Домашние задания', icon: 'ДЗ' },
+    { id: 'webinar', label: 'Вебинары', icon: 'В' },
+    { id: 'shop', label: 'Магазин', icon: 'М' },
+    { id: 'profile', label: 'Профиль', icon: 'П' },
   ];
   const tutorItems = [
-    { id: 'dashboard', label: 'Дашборд', icon: '📊' },
-    { id: 'students', label: 'Ученики', icon: '👥' },
-    { id: 'schedule', label: 'Расписание', icon: '📅' },
-    { id: 'homework', label: 'Задания', icon: '✏️' },
-    { id: 'webinar', label: 'Вебинар', icon: '🎥' },
-    { id: 'profile', label: 'Профиль', icon: '👤' },
+    { id: 'dashboard', label: 'Дашборд', icon: 'Д' },
+    { id: 'students', label: 'Ученики', icon: 'У' },
+    { id: 'schedule', label: 'Расписание', icon: 'Р' },
+    { id: 'homework', label: 'Задания', icon: 'ДЗ' },
+    { id: 'webinar', label: 'Вебинар', icon: 'В' },
+    { id: 'profile', label: 'Профиль', icon: 'П' },
   ];
   const items = currentUser.role === 'tutor' ? tutorItems : studentItems;
   nav.innerHTML = items
