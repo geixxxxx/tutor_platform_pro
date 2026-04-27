@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intellika — Платформа репетитора и ученика</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="landing" class="screen active">
+    <header class="hero-header">
+      <div class="hero-brand">
+        <div class="logo-icon">IL</div>
+        <div>
+          <h1>Intellika</h1>
+          <p>Образовательная платформа нового поколения</p>
+        </div>
+      </div>
+      <nav class="hero-nav">
+        <button class="link-btn" onclick="scrollToSection('features')">Возможности</button>
+        <button class="link-btn" onclick="scrollToSection('courses')">Курсы</button>
+        <button class="link-btn" onclick="scrollToSection('about')">О нас</button>
+      </nav>
+      <div class="hero-actions">
+        <button class="btn btn-outline" onclick="openAuth('login')">Войти</button>
+        <button class="btn btn-primary" onclick="openAuth('register')">Начать бесплатно</button>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-copy">
+        <span class="badge">Обучайся онлайн и управляй всем в одном кабинете</span>
+        <h2>Учись, тренируйся и продавай курсы<br />в современной образовательной платформе</h2>
+        <p>Ученик получает расписание, вебинары и домашние задания, а репетитор управляет студентами, вебинарами и продажей курсов.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="openAuth('register')">Создать аккаунт</button>
+          <button class="btn btn-outline" onclick="demoLogin('student')">Демо ученик</button>
+        </div>
+      </div>
+      <div class="hero-preview">
+        <div class="preview-card">
+          <div class="preview-status">LIVE</div>
+          <div class="player-window">
+            <div class="video-header">Вебинар: Математика</div>
+            <div class="video-play">▶</div>
+            <div class="video-meta">Прямой эфир от преподавателя</div>
+          </div>
+          <div class="preview-info">
+            <span>42 ученика</span>
+            <span>Сейчас идет онлайн</span>
+          </div>
+        </div>
+        <div class="hero-shapes">
+          <span class="shape shape-1"></span>
+          <span class="shape shape-2"></span>
+          <span class="shape shape-3"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-glow">
+      <div class="section-head">
+        <span class="section-label">Преимущества</span>
+        <h2>Визуальный опыт, который вдохновляет учиться</h2>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card">
+          <strong>3 минуты</strong>
+          <p>на запуск курса и первое занятие</p>
+        </div>
+        <div class="stat-card">
+          <strong>99%</strong>
+          <p>удовлетворённых учеников благодаря удобному кабинету</p>
+        </div>
+        <div class="stat-card">
+          <strong>24/7</strong>
+          <p>доступ к записям, расписанию и домашним заданиям</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <span class="section-label">Возможности</span>
+        <h2>Всё, что нужно для эффективного обучения</h2>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Студент</h3>
+          <p>Расписание, домашние задания, записи вебинаров и магазин курсов в одном интерфейсе.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Репетитор</h3>
+          <p>Создавай задания, веди вебинары в лайф-формате и управляй списком учеников.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Корзина и оплата</h3>
+          <p>Добавляй курсы в корзину и оплачивай через ЮКассу напрямую из кабинета.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Записи вебинаров</h3>
+          <p>Сохраняй эфиры в записи, чтобы ученики могли смотреть занятия в удобное время.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-light" id="courses">
+      <div class="section-head">
+        <span class="section-label">Курсы</span>
+        <h2>Популярные курсы сегодня</h2>
+      </div>
+      <div class="courses-row" id="landingCourses"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="section-label">О платформе</span>
+        <h2>Удобный интерфейс для ученика и репетитора</h2>
+      </div>
+      <div class="about-columns">
+        <div>
+          <h3>Ученику</h3>
+          <ul>
+            <li>График занятий</li>
+            <li>Домашние задания от репетитора</li>
+            <li>Онлайн-вебинары и записи</li>
+            <li>Магазин курсов</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Репетитору</h3>
+          <ul>
+            <li>Список учеников</li>
+            <li>Назначение ДЗ</li>
+            <li>Запуск вебинаров</li>
+            <li>Продажа курсов</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Intellika — образовательная платформа для репетиторов и учеников.</p>
+      <div class="footer-links">
+        <button class="link-btn" onclick="openAuth('register')">Регистрация</button>
+        <button class="link-btn" onclick="openAuth('login')">Войти</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-overlay hidden" id="authModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeAuth()">✕</button>
+      <div class="auth-tabs">
+        <button class="tab active" id="tabLogin" onclick="switchAuth('login')">Вход</button>
+        <button class="tab" id="tabRegister" onclick="switchAuth('register')">Регистрация</button>
+      </div>
+      <div class="auth-form" id="loginForm">
+        <h2>Войти</h2>
+        <label>Электронная почта</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com" />
+        <label>Пароль</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" />
+        <button class="btn btn-primary" onclick="submitLogin()">Войти</button>
+        <p class="auth-note">Нет аккаунта? <span onclick="switchAuth('register')">Зарегистрироваться</span></p>
+      </div>
+      <div class="auth-form hidden" id="registerForm">
+        <h2>Создать аккаунт</h2>
+        <label>Имя</label>
+        <input type="text" id="registerName" placeholder="Александр Иванов" />
+        <label>Email</label>
+        <input type="email" id="registerEmail" placeholder="you@example.com" />
+        <label>Пароль</label>
+        <input type="password" id="registerPassword" placeholder="Минимум 8 символов" />
+        <label>Роль</label>
+        <select id="registerRole" onchange="toggleSubjectField()">
+          <option value="student">Ученик</option>
+          <option value="tutor">Репетитор</option>
+        </select>
+        <div id="subjectGroup" class="hidden">
+          <label>Предмет</label>
+          <input type="text" id="registerSubject" placeholder="Математика, Английский" />
+        </div>
+        <button class="btn btn-primary" onclick="submitRegister()">Зарегистрироваться</button>
+        <p class="auth-note">Уже есть аккаунт? <span onclick="switchAuth('login')">Войти</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="app" class="app-shell hidden">
+    <header class="topbar">
+      <div class="topbar-brand">
+        <div class="logo-icon">IL</div>
+        <div>
+          <h3>Intellika</h3>
+          <p id="sidebarRole">...</p>
+        </div>
+      </div>
+      <div class="topbar-controls">
+        <div class="topbar-profile">
+          <div class="user-badge" id="userInitials">AA</div>
+          <div class="profile-text">
+            <p id="userName">Имя Пользователя</p>
+            <span id="userEmail">email@example.com</span>
+          </div>
+        </div>
+        <button class="btn btn-ghost sidebar-logout" onclick="performLogout()">Выйти</button>
+      </div>
+    </header>
+    <main class="main-panel">
+      <header class="main-header">
+        <div>
+          <h2 id="pageTitle">Дашборд</h2>
+          <p id="pageSubtitle">Обзор вашего кабинета</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCart()">Корзина (<span id="cartCount">0</span>)</button>
+      </header>
+      <section class="page-body" id="pageBody"></section>
+    </main>
+    <nav class="dock" id="sidebarNav"></nav>
+  </div>
+
+  <div class="cart-drawer hidden" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Корзина курсов</h3>
+      <button class="btn btn-ghost" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-content" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Итого:</span>
+        <strong id="cartTotal">0 ₽</strong>
+      </div>
+      <button class="btn btn-primary" onclick="checkout()">Оплатить через ЮКассу</button>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast">
+    <span id="toastMessage"></span>
+  </div>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>
